@@ -18,13 +18,14 @@ let ImagePicker = require('react-native-image-picker');
 import { RNS3 } from 'react-native-aws3';
 import secrets from './secrets.json'
 import axios from 'axios'
+let ActivityView = require('react-native-activity-view');
 
 class CameraCom extends Component {
   constructor(props){
     super(props)
     this.artPic = this.artPic.bind(this)
     this.namePic = this.namePic.bind(this)
-    this.onShare - this.onShare.bind(this)
+    this.onShare = this.onShare.bind(this)
     this.state = {
       arturl: require('./arthere.jpg'),
       nameurl: require('./nameart.jpg'),
@@ -33,21 +34,11 @@ class CameraCom extends Component {
   }
 
   onShare(){
-    ActionSheetIOS.showShareActionSheetWithOptions({
-      url: 'this.state.arturl.uri',
-      message: 'message to go with the shared url',
-      subject: 'a subject to go in the email heading',
-      excludedActivityTypes: []
-    },
-    (error) => alert(error), (completed, method) => {
-      var text;
-      if (completed) {
-        text = `Shared via ${method}`;
-      }
-    else {
-      text = 'You didn\'t share';
-    }
-   });
+    let name = this.state.name
+      ActivityView.show({
+      text: this.state.name,
+      imageUrl: this.state.arturl
+    });
    };
 
   artPic(){
@@ -106,7 +97,7 @@ class CameraCom extends Component {
       .then(response => {
           if (response.status !== 201) throw new Error("Failed to upload audio to S3");
           console.log(response.body.postResponse.location);
-          return axios.get('http://localhost:5000/image').then(function(resp){
+          return axios.get('https://repostart.herokuapp.com/image').then(function(resp){
             Clipboard.setString(resp.data);
             AlertIOS.alert(
              'COPIED IMAGE TEXT TO CLIPBOARD: ',
