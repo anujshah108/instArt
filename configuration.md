@@ -20,6 +20,11 @@ Make sure you have React Native command line tools installed:
 npm install -g react-native-cli
 ```
 
+*YOU WILL HAVE TO GET AWS S3 CREDENTIALS AND ADD THEM TO THE SECRETS.JSON IN src/components*
+
+#Simulation
+
+
 ```sh
 git clone https://github.com/anujshah108/rePostArt # or clone your own fork
 cd rePostArt
@@ -32,9 +37,7 @@ Run Build for either OS
     * run `react-native run-android`
 ```
 
-*YOU WILL HAVE TO GET AWS S3 CREDENTIALS AND ADD THEM TO THE SECRETS.JSON IN src/components*
-
-- This will run the simulation
+#Build on iPhone
 
 The other option is to install on iPhone directly through USB and XCode.
 
