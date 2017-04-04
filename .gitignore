@@ -32,7 +32,7 @@ local.properties
 
 #secrets
 
-**/secrets
+**/secrets.json
 
 
 # node.js
