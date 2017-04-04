@@ -1,14 +1,14 @@
 Configuration
 ===
 
-To get the pp running you have one of two options:
+To get the app running you have one of two options:
 
-first either run the server locally and change the link in line 100 in src/components/Main.js to be http://localhost:5000/image OR have the server be the heroku server(default)
+First either run the server locally and change the link in line 100 in src/components/Main.js to be http://localhost:5000/image OR have the server be the heroku server(default)
 
 ```
 return axios.get('http://localhost:5000/image').then(function(resp)
 ```
-[the link to local server](https://github.com/anujshah108/rePostArtBackend)
+[Link to Local Server](https://github.com/anujshah108/rePostArtBackend)
 
 THEN:
 
@@ -22,7 +22,7 @@ npm install -g react-native-cli
 
 *YOU WILL HAVE TO GET AWS S3 CREDENTIALS AND ADD THEM TO THE SECRETS.JSON IN src/components*
 
-#Simulation
+## Simulation
 
 
 ```sh
@@ -37,7 +37,7 @@ Run Build for either OS
     * run `react-native run-android`
 ```
 
-#Build on iPhone
+## Build on iPhone
 
 The other option is to install on iPhone directly through USB and XCode.
 
@@ -54,4 +54,6 @@ Then allow the app to build and once that is done select your phone in the upper
 Then press the build or play button.
 
 It should build to your phone and make sure iphone is unlocked.
+
+### Please add issues to repo!
 
