@@ -32,7 +32,7 @@ local.properties
 
 #secrets
 
-**/secrets.json
+src/components/secrets.json
 
 
 # node.js
