@@ -129,33 +129,35 @@ class CameraCom extends Component {
 
     return (
       <View style={styles.container}>
-      <Text>
+       <Text>
       </Text>
-      <Text>
+       <Text>
       </Text>
-      <Text>
-      </Text>
-      <Text>
+       <Text>
       </Text>
       <Image source={require('./repostartlogo.png')} style={{height: 100, width:100, alignSelf: 'center',}}/>
        <Text>
+      </Text>
+       <Text style={{textAlign: 'center'}}>
+       Click To Add Picture of Art:
       </Text>
       <TouchableOpacity onPress={this.artPic} style={{height: 150, width:200, alignSelf: 'center',}}>
       <Image source={this.state.arturl} style={{height: 150, width:200, alignSelf: 'center',}}/>
       </TouchableOpacity>
        <Text>
-      HELLO
       </Text>
-       <Text>
-      HELLO
+      <Text>
+      </Text>
+       <Text style={{textAlign: 'center'}}>
+      Click To Add Picture of Info and Artist Name:
       </Text>
       <TouchableOpacity onPress={this.namePic} style={{height: 150, width:200, alignSelf: 'center',}}>
       <Image source={this.state.nameurl} style={{height: 150, width:200, alignSelf: 'center',}}/>
       </TouchableOpacity>
        <Text>
        </Text>
-      <TextInput style={{height: 40, borderColor: 'blue', borderWidth: 1}}></TextInput>
       <Button title='Share' onPress={this.onShare} />
+      <TextInput style={{height: 40, borderColor: 'blue', borderWidth: 1}}></TextInput>
       </View>
     );
   }
