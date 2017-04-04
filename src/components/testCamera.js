@@ -18,6 +18,7 @@ let ImagePicker = require('react-native-image-picker');
 import { RNS3 } from 'react-native-aws3';
 import secrets from './secrets.json'
 import axios from 'axios'
+import Share from 'react-native-share'
 
 class CameraCom extends Component {
   constructor(props){
