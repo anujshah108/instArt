@@ -31,7 +31,7 @@ local.properties
 *.iml
 
 #secrets
-secrets.json
+**/secrets
 
 
 # node.js
