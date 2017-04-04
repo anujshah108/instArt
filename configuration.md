@@ -12,7 +12,7 @@ return axios.get('http://localhost:5000/image').then(function(resp)
 
 THEN:
 
-Make sure you have node, npm and XCode installed.
+Make sure you have Node, npm and XCode installed.
 
 Make sure you have React Native command line tools installed:
 
@@ -45,11 +45,11 @@ Go into XCode by clicking the rePostArt.xcodeproject in the ios folder of the re
 
 Make sure you have a Personal Team and App Developer Account (Free is Okay).
 
-iPHONE is Unlocked and then plug in.
+iPhone is unlocked and then plug in.
 
-Set a personal team for all four targets in XCode.
+Set a Personal Team for all four targets in XCode.
 
-Then allow the app to build and once that is done select your phone in the upper right hand corner.
+Then allow the app to load and once that is done select your phone in the upper right hand corner.
 
 Then press the build or play button.
 
