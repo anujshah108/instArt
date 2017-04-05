@@ -1,6 +1,6 @@
 import 'react-native';
 import React from 'react';
-import Main from '../src/components/Main';
+import Main from '../src/components/testCamera';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';

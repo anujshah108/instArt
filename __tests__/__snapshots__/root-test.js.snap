@@ -18,6 +18,10 @@ exports[`test renders correctly 1`] = `
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail" />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail" />
   <Image
     source={1}
     style={
@@ -31,16 +35,51 @@ exports[`test renders correctly 1`] = `
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail" />
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 150,
+        "opacity": 1,
+        "width": 200,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}>
+    <Image
+      source={1}
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 150,
+          "width": 200,
+        }
+      } />
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "textAlign": "center",
-      }
-    }>
-    Click To Add Picture of Art:
+    ellipsizeMode="tail">
+    HELLO
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    HELLO
   </Text>
   <View
     accessibilityComponentType={undefined}
@@ -80,59 +119,14 @@ exports[`test renders correctly 1`] = `
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail" />
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail" />
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <TextInput
     style={
       Object {
-        "textAlign": "center",
+        "borderColor": "blue",
+        "borderWidth": 1,
+        "height": 40,
       }
-    }>
-    Click To Add Picture of Info and Artist Name:
-  </Text>
-  <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
-    accessible={true}
-    hitSlop={undefined}
-    isTVSelectable={true}
-    onLayout={undefined}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignSelf": "center",
-        "height": 150,
-        "opacity": 1,
-        "width": 200,
-      }
-    }
-    testID={undefined}
-    tvParallaxProperties={undefined}>
-    <Image
-      source={1}
-      style={
-        Object {
-          "alignSelf": "center",
-          "height": 150,
-          "width": 200,
-        }
-      } />
-  </View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail" />
+    } />
   <View
     accessibilityComponentType="button"
     accessibilityLabel={undefined}
@@ -182,13 +176,5 @@ exports[`test renders correctly 1`] = `
       </Text>
     </View>
   </View>
-  <TextInput
-    style={
-      Object {
-        "borderColor": "blue",
-        "borderWidth": 1,
-        "height": 40,
-      }
-    } />
 </View>
 `;
