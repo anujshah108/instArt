@@ -21,6 +21,7 @@ npm install -g react-native-cli
 ```
 
 *YOU WILL HAVE TO GET AWS S3 CREDENTIALS AND ADD THEM TO THE SECRETS.JSON IN src/components*
+*WILL ALSO NEED TO ADD S3 BUCKET NAME IN MAIN.JS*
 
 ## Simulation
 
