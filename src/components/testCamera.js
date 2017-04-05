@@ -16,7 +16,6 @@ import {
 } from 'react-native';
 let ImagePicker = require('react-native-image-picker');
 import { RNS3 } from 'react-native-aws3';
-import secrets from './secrets.json'
 import axios from 'axios'
 
 class CameraCom extends Component {
